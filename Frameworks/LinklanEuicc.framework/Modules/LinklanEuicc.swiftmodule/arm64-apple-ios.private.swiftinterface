@@ -1,0 +1,242 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name LinklanEuicc
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import CoreBluetooth
+import Foundation
+import Swift
+import TYLPA
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import __ObjC
+import eSIMManagerSDK
+public struct BleDevice {
+  public let address: Swift.String
+  public let name: Swift.String
+  public let rssi: Swift.Int
+  public let model: Swift.String
+  public let scanRecord: Foundation.Data?
+  public let serviceUuids: [Swift.String]?
+  public let txPower: Swift.Int?
+  public let manufacturerData: [Swift.Int : Foundation.Data]?
+  public let lastSeen: Foundation.Date
+}
+extension LinklanEuicc.BleDevice : Swift.Equatable {
+  public static func == (lhs: LinklanEuicc.BleDevice, rhs: LinklanEuicc.BleDevice) -> Swift.Bool
+}
+extension LinklanEuicc.BleDevice : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension LinklanEuicc.BleDevice : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension LinklanEuicc.BleDevice {
+  public func hasServiceUuid(_ uuid: Swift.String) -> Swift.Bool
+}
+public protocol BleDeviceConnectionListener {
+  func onStatusChange(address: Swift.String?, status: Swift.String)
+}
+public protocol BleScanCallback {
+  func onDeviceFound(device: LinklanEuicc.BleDevice)
+  func onDeviceUpdated(device: LinklanEuicc.BleDevice)
+  func onScanStateChanged(isScanning: Swift.Bool)
+  func onScanFailed(errorCode: Swift.Int, errorMsg: Swift.String)
+}
+extension LinklanEuicc.BleScanCallback {
+  public func onDeviceUpdated(device: LinklanEuicc.BleDevice)
+  public func onScanStateChanged(isScanning: Swift.Bool)
+}
+public protocol BleUserAuthenticationListener {
+  func onPromptUserAuthentication(address: Swift.String?) -> Swift.String
+}
+@objc @objcMembers public class DetailedErrorMessageUtils : ObjectiveC.NSObject {
+  @objc public init(carrierName: Swift.String? = nil, csTel: Swift.String? = nil, errorCode: Swift.Int, operationCode: Swift.Int, reasonCode: Swift.String, subjectCode: Swift.String)
+  @objc public func getCouldntActivateCarrierTitle() -> Swift.String
+  @objc public func getGeneralErrorMessages() -> LinklanEuicc.ErrorMessages
+  @objc public func getSmdxErrorMessages() -> LinklanEuicc.ErrorMessages
+  @objc public func getErrorMessages() -> LinklanEuicc.ErrorMessages
+  @objc public func localizeStr(_ str: Swift.String) -> Swift.String
+  @objc public func localizeStr(_ str: Swift.String, _ com: Swift.String) -> Swift.String
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class ErrorMessages : ObjectiveC.NSObject {
+  @objc public var title: Swift.String?
+  @objc public var bodyText: Swift.String?
+  @objc public var errorDetails: Swift.String?
+  @objc public var additionalInfo: Swift.String?
+  @objc public var code: Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class ExtractUtil : ObjectiveC.NSObject {
+  @objc public static func extractErrorCode(detailedCode: Swift.Int) -> [Swift.String : Any]
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objcMembers public class Pair<T, U> : ObjectiveC.NSObject {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class EuiccCode : ObjectiveC.NSObject {
+  @objc public static let EXTRA_EMBEDDED_SUBSCRIPTION_OPERATION_CODE: Swift.String
+  @objc public static let EXTRA_EMBEDDED_SUBSCRIPTION_ERROR_CODE: Swift.String
+  @objc public static let EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_SUBJECT_CODE: Swift.String
+  @objc public static let EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_REASON_CODE: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class OperationCode : ObjectiveC.NSObject {
+  @objc public static let OPERATION_SYSTEM: Swift.Int
+  @objc public static let OPERATION_SIM_SLOT: Swift.Int
+  @objc public static let OPERATION_EUICC_CARD: Swift.Int
+  @objc public static let OPERATION_SWITCH: Swift.Int
+  @objc public static let OPERATION_DOWNLOAD: Swift.Int
+  @objc public static let OPERATION_METADATA: Swift.Int
+  @objc public static let OPERATION_EUICC_GSMA: Swift.Int
+  @objc public static let OPERATION_APDU: Swift.Int
+  @objc public static let OPERATION_SMDX: Swift.Int
+  @objc public static let OPERATION_SMDX_SUBJECT_REASON_CODE: Swift.Int
+  @objc public static let OPERATION_HTTP: Swift.Int
+  @objc public static let OPERATION_NOTIFICATION: Swift.Int
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class LPAErrorCode : ObjectiveC.NSObject {
+  @objc public static let ERROR_CARRIER_LOCKED: Swift.Int
+  @objc public static let ERROR_INVALID_ACTIVATION_CODE: Swift.Int
+  @objc public static let ERROR_INVALID_CONFIRMATION_CODE: Swift.Int
+  @objc public static let ERROR_INCOMPATIBLE_CARRIER: Swift.Int
+  @objc public static let ERROR_EUICC_INSUFFICIENT_MEMORY: Swift.Int
+  @objc public static let ERROR_TIME_OUT: Swift.Int
+  @objc public static let ERROR_EUICC_MISSING: Swift.Int
+  @objc public static let ERROR_UNSUPPORTED_VERSION: Swift.Int
+  @objc public static let ERROR_SIM_MISSING: Swift.Int
+  @objc public static let ERROR_INSTALL_PROFILE: Swift.Int
+  @objc public static let ERROR_DISALLOWED_BY_PPR: Swift.Int
+  @objc public static let ERROR_ADDRESS_MISSING: Swift.Int
+  @objc public static let ERROR_CERTIFICATE_ERROR: Swift.Int
+  @objc public static let ERROR_NO_PROFILES_AVAILABLE: Swift.Int
+  @objc public static let ERROR_CONNECTION_ERROR: Swift.Int
+  @objc public static let ERROR_INVALID_RESPONSE: Swift.Int
+  @objc public static let ERROR_OPERATION_BUSY: Swift.Int
+  @objc public static let ERROR_INVALID_PORT: Swift.Int
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class SubjectCodeMap : ObjectiveC.NSObject {
+  @objc public static let value: [Swift.String : Swift.String]
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class ReasonCodeMap : ObjectiveC.NSObject {
+  @objc public static let value: [Swift.String : Swift.String]
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct EuiccDevice {
+  public var eid: Swift.String?
+  public var imei: Swift.String?
+  public var sn: Swift.String?
+  public var name: Swift.String?
+  public var model: Swift.String?
+  public var deviceName: Swift.String?
+  public var address: Swift.String?
+  public var vendor: Swift.String?
+  public var freeVolatileMemory: Swift.Int?
+  public var freeNonVolatileMemory: Swift.Int?
+}
+extension LinklanEuicc.EuiccDevice : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public struct EuiccResult<T> {
+  public var code: Swift.Int?
+  public var data: T?
+  public var title: Swift.String?
+  public var msg: Swift.String?
+  public var info: Swift.String?
+  public var isSuccess: Swift.Bool {
+    get
+  }
+}
+extension LinklanEuicc.EuiccResult where T == () {
+  public static func success() -> LinklanEuicc.EuiccResult<Swift.Void>
+  public static func failure(code: Swift.Int, msg: Swift.String) -> LinklanEuicc.EuiccResult<Swift.Void>
+}
+extension LinklanEuicc.EuiccResult {
+  public static func success(data: T) -> LinklanEuicc.EuiccResult<T>
+  public static func failure(code: Swift.Int, title: Swift.String? = nil, msg: Swift.String? = nil, info: Swift.String? = nil) -> LinklanEuicc.EuiccResult<T>
+}
+public struct ProfileInfo {
+  public var iccid: Swift.String?
+  public var profileName: Swift.String?
+  public var nickname: Swift.String?
+  public var profileClass: Swift.Int?
+  public var serviceProviderName: Swift.String?
+  public var policyRules: Swift.Int?
+  public var state: Swift.Int?
+  public var mcc: Swift.String?
+  public var mnc: Swift.String?
+  public var imsi: Swift.String?
+}
+extension LinklanEuicc.ProfileInfo : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension LinklanEuicc.ProfileInfo : Swift.Equatable {
+  public static func == (lhs: LinklanEuicc.ProfileInfo, rhs: LinklanEuicc.ProfileInfo) -> Swift.Bool
+}
+extension LinklanEuicc.ProfileInfo : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LinklanLPA : ObjectiveC.NSObject {
+  public static let shared: LinklanEuicc.LinklanLPA
+  public var bleDeviceConnectionListener: (any LinklanEuicc.BleDeviceConnectionListener)?
+  public var userAuthenticationListener: (any LinklanEuicc.BleUserAuthenticationListener)?
+  public func initSDK(debug: Swift.Bool = false)
+  public func startScan(callback: any LinklanEuicc.BleScanCallback)
+  public func stopScan()
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func connectDevice(device: LinklanEuicc.BleDevice?) async -> LinklanEuicc.EuiccResult<LinklanEuicc.EuiccDevice>
+  #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func getDeviceInfo(device: LinklanEuicc.EuiccDevice) async -> LinklanEuicc.EuiccResult<LinklanEuicc.EuiccDevice>
+  #endif
+  public func checkDeviceConnection(device: LinklanEuicc.EuiccDevice?) -> Swift.Bool
+  public func disconnectDevice(device: LinklanEuicc.EuiccDevice?)
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func resetDevice(device: LinklanEuicc.EuiccDevice?, duration: Swift.UInt64 = 15000) async
+  #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func getProfileInfoList(device: LinklanEuicc.EuiccDevice?) async -> LinklanEuicc.EuiccResult<[LinklanEuicc.ProfileInfo]>
+  #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func enableProfile(device: LinklanEuicc.EuiccDevice?, iccid: Swift.String?) async -> LinklanEuicc.EuiccResult<Swift.String>
+  #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func disableProfile(device: LinklanEuicc.EuiccDevice?, iccid: Swift.String?) async -> LinklanEuicc.EuiccResult<Swift.String>
+  #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func deleteProfile(device: LinklanEuicc.EuiccDevice?, iccid: Swift.String?) async -> LinklanEuicc.EuiccResult<Swift.String>
+  #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func downloadProfile(device: LinklanEuicc.EuiccDevice?, activeCode: Swift.String?, confirmCode: Swift.String?) async -> LinklanEuicc.EuiccResult<Swift.String>
+  #endif
+  public func setAPN(device: LinklanEuicc.EuiccDevice?, apn: Swift.String?, userName: Swift.String?, userPass: Swift.String?, authType: Swift.String?, dialNum: Swift.String?, netType: Swift.String?, pdpType: Swift.String?)
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func getAPN(device: LinklanEuicc.EuiccDevice?) async -> LinklanEuicc.EuiccResult<Swift.String>
+  #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func setApdu(device: LinklanEuicc.EuiccDevice?, checkPatch: Swift.String?) async -> LinklanEuicc.EuiccResult<Swift.String>
+  #endif
+  @objc deinit
+}

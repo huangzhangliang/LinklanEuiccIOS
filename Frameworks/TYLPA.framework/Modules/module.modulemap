@@ -1,0 +1,6 @@
+framework module TYLPA {
+  umbrella header "TYLPA.h"
+  export *
+
+  module * { export * }
+}

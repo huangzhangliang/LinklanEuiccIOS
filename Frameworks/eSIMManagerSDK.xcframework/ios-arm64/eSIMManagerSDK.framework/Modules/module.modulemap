@@ -1,0 +1,17 @@
+//
+//  eSIMManagerSDK.modulemap
+//  eSIMManagerSDK
+//
+//  Created by auda on 2023/7/20.
+//
+
+framework module eSIMManagerSDK {
+    umbrella header "eSIMManagerSDK.h"
+
+    export *
+    module * { export * }
+}
+
+module eSIMManagerSDK.Swift {
+  header "eSIMManagerSDK-Swift.h"
+}
