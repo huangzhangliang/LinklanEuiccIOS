@@ -5,7 +5,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'LinklanEuiccIOS'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'A Flutter plugin for Linklan eUICC SDK'
   s.description      = <<-DESC
 A Flutter plugin that wraps the Linklan eUICC iOS SDK.
