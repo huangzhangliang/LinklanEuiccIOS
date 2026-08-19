@@ -13,7 +13,7 @@ A Flutter plugin that wraps the Linklan eUICC iOS SDK.
   s.homepage         = 'https://github.com/huangzhangliang/LinklanEuiccIOS'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'huangzhangliang' => '82770536@qq.com' }
-  s.source       = {:git => "https://github.com/huangzhangliang/LinklanEuiccIOS.git", :tag => s.version}
-  s.dependency 'LinklanEuicc', '1.0.1'
+  s.source       = {:git => "https://github.com/huangzhangliang/LinklanEuiccIOS.git", :tag => s.version.to_s}
+  s.dependency 'LinklanEuicc', s.version.to_s
 
 end
