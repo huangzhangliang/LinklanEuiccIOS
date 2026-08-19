@@ -1,27 +1,28 @@
-
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint linklan_euicc.podspec` to validate before publishing.
-#
 Pod::Spec.new do |s|
   s.name             = 'LinklanEuiccIOS'
-  s.version          = '1.0.3'
-  s.summary          = 'A Flutter plugin for Linklan eUICC SDK'
+  s.version          = '1.0.4'
+  s.summary          = 'Linklan eUICC iOS SDK'
   s.description      = <<-DESC
-A Flutter plugin that wraps the Linklan eUICC iOS SDK.
+Linklan eUICC iOS SDK, including necessary frameworks for eSIM management.
                        DESC
   s.homepage         = 'https://github.com/huangzhangliang/LinklanEuiccIOS'
-  s.license          = { :file => '../LICENSE' }
+  s.license          = { :type => 'MIT' }
   s.author           = { 'huangzhangliang' => '82770536@qq.com' }
-  s.source       = {:git => "https://github.com/huangzhangliang/LinklanEuiccIOS.git", :tag => s.version}
+  s.source           = { :git => 'https://github.com/huangzhangliang/LinklanEuiccIOS.git', :tag => s.version.to_s }
+  # ✅ 只指定 iOS 平台
+  s.platform         = :ios, '13.0'
+  s.swift_version    = '5.0'
 
-#  s.source_files  = "Classes", "Classes/**/*.{h,m}", "Classes/**/*.swift"
-#  s.exclude_files = "Classes/Exclude"
-  s.static_framework = true
   s.vendored_frameworks = [
     'Frameworks/LinklanEuicc.framework',
     'Frameworks/eSIMManagerSDK.xcframework',
     'Frameworks/TYLPA.framework'
   ]
 
+  s.frameworks = 'CoreBluetooth', 'Foundation', 'UIKit'
+
+  s.pod_target_xcconfig = {
+    'DEFINES_MODULE' => 'YES',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 x86_64 i386'
+  }
 end
