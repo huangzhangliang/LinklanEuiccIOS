@@ -14,12 +14,12 @@ A Flutter plugin that wraps the Linklan eUICC iOS SDK.
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'huangzhangliang' => '82770536@qq.com' }
   s.source       = {:git => "https://github.com/huangzhangliang/LinklanEuiccIOS.git", :tag => s.version}
-  s.source_files     = 'Frameworks/**/*'
+#  s.source_files     = 'Frameworks/**/*'
 
   s.vendored_frameworks = [
-    'LinklanEuicc.framework',
-    'eSIMManagerSDK.xcframework',
-    'TYLPA.framework'
+    'Frameworks/LinklanEuicc.framework',
+    'Frameworks/eSIMManagerSDK.xcframework',
+    'Frameworks/TYLPA.framework'
   ]
 
 
