@@ -15,8 +15,8 @@ A Flutter plugin that wraps the Linklan eUICC iOS SDK.
   s.author           = { 'huangzhangliang' => '82770536@qq.com' }
   s.source       = {:git => "https://github.com/huangzhangliang/LinklanEuiccIOS.git", :tag => s.version}
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}", "Classes/**/*.swift"
-  s.exclude_files = "Classes/Exclude"
+#  s.source_files  = "Classes", "Classes/**/*.{h,m}", "Classes/**/*.swift"
+#  s.exclude_files = "Classes/Exclude"
   s.vendored_frameworks ='eSIMManagerSDK.xcframework'
 
 end
