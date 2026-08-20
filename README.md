@@ -1,6 +1,6 @@
 # LinklanLPA iOS SDK 对接文档
 
-**SDK 版本：1.0.8**
+**SDK 版本：1.1.0**
 
 **模块名：`LinklanEuicc`**
 
@@ -89,7 +89,7 @@ LinklanLPA 是一款基于 iOS BLE（CoreBluetooth）的 eSIM 设备管理 SDK�
 ```ruby
 # Podfile
 target 'YourApp' do
-  use_frameworks!
+  use_frameworks! :linkage => :static
   pod 'LinklanEuiccIOS'
 end
 ```
