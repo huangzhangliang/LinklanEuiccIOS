@@ -9,13 +9,13 @@ let package = Package(
     products: [
         .library(
             name: "LinklanEuiccIOS",
-            targets: ["LinklanEuicc"] 
+            targets: ["LinklanEuicc", "eSIMManagerSDK", "TYLPA"]
         ),
     ],
     targets: [
         .binaryTarget(
             name: "LinklanEuicc",
-            path: "Frameworks/LinklanEuicc.framework"
+            path: "Frameworks/LinklanEuicc.xcframework"
         ),
         .binaryTarget(
             name: "eSIMManagerSDK",
@@ -23,7 +23,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "TYLPA",
-            path: "Frameworks/TYLPA.framework"
+            path: "Frameworks/TYLPA.xcframework"
         ),
     ]
 )
