@@ -4,6 +4,48 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/TYLPA.framework/Info.plist</key>
+		<data>
+		w1L2qB9Q1ZRjJcq7/cSbT2mLIzI=
+		</data>
+		<key>Frameworks/TYLPA.framework/TYLPA</key>
+		<data>
+		QhxZM7y6SKFkiXDg1iGEpltKNmQ=
+		</data>
+		<key>Frameworks/TYLPA.framework/_CodeSignature/CodeResources</key>
+		<data>
+		v9v8m44HK/7ua29s843VECzXZZI=
+		</data>
+		<key>Frameworks/TYLPA.framework/en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SEc1tYoHwWhfOo//2CKROaPt7Qo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/TYLPA.framework/zh-Hans.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			289kqdJXJZNiR0mD+N46JUQthCk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/eSIMManagerSDK.framework/Info.plist</key>
+		<data>
+		oBq/Z6t661/Dc5FMPDdgcCFBMTc=
+		</data>
+		<key>Frameworks/eSIMManagerSDK.framework/_CodeSignature/CodeResources</key>
+		<data>
+		Ole+gmLJt8Iw25mWEZcwsi7yDtQ=
+		</data>
+		<key>Frameworks/eSIMManagerSDK.framework/eSIMManagerSDK</key>
+		<data>
+		fChL9+roResJGHIOXlxjGqis1Ac=
+		</data>
 		<key>Headers/LinklanEuicc-Swift.h</key>
 		<data>
 		Gb6qgdTTZsF3/Wv5XAXh0Y4QBN0=
@@ -57,6 +99,66 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/TYLPA.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JwZwDa1k3h7lD0lFJZ85xkzq7hRrO1IFNogTHFC39fQ=
+			</data>
+		</dict>
+		<key>Frameworks/TYLPA.framework/TYLPA</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YZZrzwvlxghnsVO4UsB6rq4pc9nIzY1Qj81giAdtr94=
+			</data>
+		</dict>
+		<key>Frameworks/TYLPA.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			S2tUY7hTQothdZXSdO4tuZPP8Sx35Fr7o5X3MTx0aww=
+			</data>
+		</dict>
+		<key>Frameworks/TYLPA.framework/en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3cqzu7j+5pSLp+5uwT37K/tsO7rT0BA8llj7yeu13tw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/TYLPA.framework/zh-Hans.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CQ6T4/PtkQM5Ef9E6RMRXdMkvAPp18JyEt7xSf1dZSo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/eSIMManagerSDK.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UeIKGzzdit1VdYKgOK319boCBbqW9PmTVc8h+3Mt3Bc=
+			</data>
+		</dict>
+		<key>Frameworks/eSIMManagerSDK.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1f7hW9P0+LC1pCz1by7EudYUoFMQFFOcq1pfrSpoT9Q=
+			</data>
+		</dict>
+		<key>Frameworks/eSIMManagerSDK.framework/eSIMManagerSDK</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IvpbmVfaanBY441aw3cv7SrDjOBt1K+W22Tz1lCpbSU=
+			</data>
+		</dict>
 		<key>Headers/LinklanEuicc-Swift.h</key>
 		<dict>
 			<key>hash2</key>

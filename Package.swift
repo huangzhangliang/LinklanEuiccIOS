@@ -3,14 +3,12 @@ import PackageDescription
 
 let package = Package(
     name: "LinklanEuiccIOS",
-    platforms: [
-        .iOS(.v13)
-    ],
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "LinklanEuiccIOS",
             targets: ["LinklanEuicc", "eSIMManagerSDK", "TYLPA"]
-        ),
+        )
     ],
     targets: [
         .binaryTarget(
@@ -24,6 +22,6 @@ let package = Package(
         .binaryTarget(
             name: "TYLPA",
             path: "Frameworks/TYLPA.xcframework"
-        ),
+        )
     ]
 )

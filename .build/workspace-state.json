@@ -1,0 +1,67 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "linklaneuiccios",
+          "kind" : "root",
+          "location" : "/Users/apple/Wrokspace/Github/LinklanEuiccIOS",
+          "name" : "LinklanEuiccIOS"
+        },
+        "path" : "/Users/apple/Wrokspace/Github/LinklanEuiccIOS/Frameworks/eSIMManagerSDK.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "eSIMManagerSDK"
+      },
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "linklaneuiccios",
+          "kind" : "root",
+          "location" : "/Users/apple/Wrokspace/Github/LinklanEuiccIOS",
+          "name" : "LinklanEuiccIOS"
+        },
+        "path" : "/Users/apple/Wrokspace/Github/LinklanEuiccIOS/Frameworks/TYLPA.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "TYLPA"
+      },
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "linklaneuiccios",
+          "kind" : "root",
+          "location" : "/Users/apple/Wrokspace/Github/LinklanEuiccIOS",
+          "name" : "LinklanEuiccIOS"
+        },
+        "path" : "/Users/apple/Wrokspace/Github/LinklanEuiccIOS/Frameworks/LinklanEuicc.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "LinklanEuicc"
+      }
+    ],
+    "dependencies" : [
+
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}
