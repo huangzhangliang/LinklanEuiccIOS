@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LinklanEuiccIOS'
-  s.version          = '1.0.4'
+  s.version          = '1.1.0'
   s.summary          = 'Linklan eUICC iOS SDK'
   s.description      = <<-DESC
 Linklan eUICC iOS SDK, including necessary frameworks for eSIM management.
@@ -14,9 +14,9 @@ Linklan eUICC iOS SDK, including necessary frameworks for eSIM management.
   s.swift_version    = '5.0'
 
   s.vendored_frameworks = [
-    'Frameworks/LinklanEuicc.framework',
+    'Frameworks/LinklanEuicc.xcframework',
     'Frameworks/eSIMManagerSDK.xcframework',
-    'Frameworks/TYLPA.framework'
+    'Frameworks/TYLPA.xcframework'
   ]
 
   s.frameworks = 'CoreBluetooth', 'Foundation', 'UIKit'
