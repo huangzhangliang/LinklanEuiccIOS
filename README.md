@@ -91,9 +91,6 @@ LinklanLPA 是一款基于 iOS BLE（CoreBluetooth）的 eSIM 设备管理 SDK�
 target 'YourApp' do
   use_frameworks! :linkage => :static
   pod 'LinklanEuiccIOS'
-  pod 'Moya'
-  pod 'RxCocoa'
-  pod 'GestureRecognizerClosures', '~> 5'
 end
 ```
 
