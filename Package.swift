@@ -10,6 +10,11 @@ let package = Package(
             targets: ["LinklanEuicc", "eSIMManagerSDK", "TYLPA"]
         )
     ],
+    dependencies: [
+        .package(url: "https://github.com/Moya/Moya.git", from: "15.0.0"),
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "6.5.0"),
+        .package(url: "https://github.com/ashleymills/GestureRecognizerClosures.git", from: "5.0.0"),
+    ],
     targets: [
         .binaryTarget(
             name: "LinklanEuicc",
