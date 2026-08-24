@@ -113,11 +113,6 @@ dependencies: [
 ]
 ```
 
-#### 方式三：手动集成（XCFramework）
-
-将 `LinklanEuicc.xcframework` 拖入 Xcode 项目，在 Target → General → Frameworks, Libraries, and Embedded Content 中添加并设为 `Embed & Sign`。
-
----
 
 ## 4. 核心数据模型
 
