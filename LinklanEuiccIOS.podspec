@@ -12,7 +12,9 @@ Linklan eUICC iOS SDK, including necessary frameworks for eSIM management.
   # ✅ 只指定 iOS 平台
   s.platform         = :ios, '13.0'
   s.swift_version    = '5.0'
-
+  s.dependency 'Moya'
+  s.dependency 'RxCocoa'
+  s.dependency 'GestureRecognizerClosures', '~> 5'
   s.vendored_frameworks = [
     'Frameworks/LinklanEuicc.xcframework',
     'Frameworks/eSIMManagerSDK.xcframework',
