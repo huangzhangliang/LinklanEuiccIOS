@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LinklanEuiccIOS'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'Linklan eUICC iOS SDK'
   s.description      = <<-DESC
 Linklan eUICC iOS SDK, including necessary frameworks for eSIM management.
@@ -12,9 +12,7 @@ Linklan eUICC iOS SDK, including necessary frameworks for eSIM management.
   # ✅ 只指定 iOS 平台
   s.platform         = :ios, '13.0'
   s.swift_version    = '5.0'
-  s.dependency 'Moya'
-  s.dependency 'RxCocoa'
-  s.dependency 'GestureRecognizerClosures', '~> 5'
+
   s.vendored_frameworks = [
     'Frameworks/LinklanEuicc.xcframework',
     'Frameworks/eSIMManagerSDK.xcframework',
