@@ -13,13 +13,13 @@ import eSIMManagerSDK
 public struct BleDevice {
   public let address: Swift.String
   public let name: Swift.String
-  public let rssi: Swift.Int
+  public let rssi: Swift.Int?
   public let model: Swift.String
   public let scanRecord: Foundation.Data?
   public let serviceUuids: [Swift.String]?
   public let txPower: Swift.Int?
   public let manufacturerData: [Swift.Int : Foundation.Data]?
-  public let lastSeen: Foundation.Date
+  public let lastSeen: Foundation.Date?
 }
 extension LinklanEuicc.BleDevice : Swift.Equatable {
   public static func == (lhs: LinklanEuicc.BleDevice, rhs: LinklanEuicc.BleDevice) -> Swift.Bool

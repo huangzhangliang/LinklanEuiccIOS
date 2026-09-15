@@ -123,14 +123,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:12LinklanEuicc9BleDeviceV4rssiSivp",
-            "mangledName": "$s12LinklanEuicc9BleDeviceV4rssiSivp",
+            "usr": "s:12LinklanEuicc9BleDeviceV4rssiSiSgvp",
+            "mangledName": "$s12LinklanEuicc9BleDeviceV4rssiSiSgvp",
             "moduleName": "LinklanEuicc",
             "declAttributes": [
               "HasStorage",
@@ -147,14 +155,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12LinklanEuicc9BleDeviceV4rssiSivg",
-                "mangledName": "$s12LinklanEuicc9BleDeviceV4rssiSivg",
+                "usr": "s:12LinklanEuicc9BleDeviceV4rssiSiSgvg",
+                "mangledName": "$s12LinklanEuicc9BleDeviceV4rssiSiSgvg",
                 "moduleName": "LinklanEuicc",
                 "implicit": true,
                 "accessorKind": "get"
@@ -501,14 +517,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Date",
-                "printedName": "Foundation.Date",
-                "usr": "s:10Foundation4DateV"
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:12LinklanEuicc9BleDeviceV8lastSeen10Foundation4DateVvp",
-            "mangledName": "$s12LinklanEuicc9BleDeviceV8lastSeen10Foundation4DateVvp",
+            "usr": "s:12LinklanEuicc9BleDeviceV8lastSeen10Foundation4DateVSgvp",
+            "mangledName": "$s12LinklanEuicc9BleDeviceV8lastSeen10Foundation4DateVSgvp",
             "moduleName": "LinklanEuicc",
             "declAttributes": [
               "HasStorage",
@@ -525,14 +549,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12LinklanEuicc9BleDeviceV8lastSeen10Foundation4DateVvg",
-                "mangledName": "$s12LinklanEuicc9BleDeviceV8lastSeen10Foundation4DateVvg",
+                "usr": "s:12LinklanEuicc9BleDeviceV8lastSeen10Foundation4DateVSgvg",
+                "mangledName": "$s12LinklanEuicc9BleDeviceV8lastSeen10Foundation4DateVSgvg",
                 "moduleName": "LinklanEuicc",
                 "implicit": true,
                 "accessorKind": "get"
@@ -9736,10 +9768,24 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/apple\/Wrokspace\/iOS\/LinklanEuiccIOS\/LinklanEuicc\/Ble\/BleDevice.swift",
+      "kind": "IntegerLiteral",
+      "offset": 747,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/apple\/Wrokspace\/iOS\/LinklanEuiccIOS\/LinklanEuicc\/Ble\/BleDevice.swift",
       "kind": "StringLiteral",
-      "offset": 769,
+      "offset": 775,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Wrokspace\/iOS\/LinklanEuiccIOS\/LinklanEuicc\/Ble\/BleDevice.swift",
+      "kind": "IntegerLiteral",
+      "offset": 878,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/apple\/Wrokspace\/iOS\/LinklanEuiccIOS\/LinklanEuicc\/Ble\/BleScanner.swift",
