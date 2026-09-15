@@ -1,6 +1,6 @@
 # LinklanLPA iOS SDK 对接文档
 
-**SDK 版本：1.1.8**
+**SDK 版本：1.1.9**
 
 **模块名：`LinklanEuicc`**
 
