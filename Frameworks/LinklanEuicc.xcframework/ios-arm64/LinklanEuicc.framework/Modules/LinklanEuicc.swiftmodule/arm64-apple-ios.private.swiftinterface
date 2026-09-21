@@ -52,7 +52,9 @@ extension LinklanEuicc.BleScanCallback {
   public func onScanStateChanged(isScanning: Swift.Bool)
 }
 public protocol BleUserAuthenticationListener {
-  func onPromptUserAuthentication(address: Swift.String?) -> Swift.String
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) func onPromptUserAuthentication(address: Swift.String?) async -> Swift.String
+  #endif
 }
 @objc @objcMembers public class DetailedErrorMessageUtils : ObjectiveC.NSObject {
   @objc public init(carrierName: Swift.String? = nil, csTel: Swift.String? = nil, errorCode: Swift.Int, operationCode: Swift.Int, reasonCode: Swift.String, subjectCode: Swift.String)

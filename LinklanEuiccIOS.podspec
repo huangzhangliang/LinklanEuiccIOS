@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LinklanEuiccIOS'
-  s.version          = '1.2.4'
+  s.version          = '1.2.6'
   s.summary          = 'Linklan eUICC iOS SDK'
   s.description      = <<-DESC
 Linklan eUICC iOS SDK, including necessary frameworks for eSIM management.

@@ -1163,13 +1163,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12LinklanEuicc29BleUserAuthenticationListenerP08onPromptdE07addressS2SSg_tF",
-            "mangledName": "$s12LinklanEuicc29BleUserAuthenticationListenerP08onPromptdE07addressS2SSg_tF",
+            "usr": "s:12LinklanEuicc29BleUserAuthenticationListenerP08onPromptdE07addressS2SSg_tYaF",
+            "mangledName": "$s12LinklanEuicc29BleUserAuthenticationListenerP08onPromptdE07addressS2SSg_tYaF",
             "moduleName": "LinklanEuicc",
             "genericSig": "<τ_0_0 where τ_0_0 : LinklanEuicc.BleUserAuthenticationListener>",
             "sugared_genericSig": "<Self where Self : LinklanEuicc.BleUserAuthenticationListener>",
             "protocolReq": true,
             "declAttributes": [
+              "Nonisolated",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
