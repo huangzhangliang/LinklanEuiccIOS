@@ -1,6 +1,6 @@
 # LinklanLPA iOS SDK 对接文档
 
-**SDK 版本：1.1.9**
+**SDK 版本：1.2.6**
 
 **模块名：`LinklanEuicc`**
 
@@ -109,7 +109,7 @@ pod install
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/huangzhangliang/LinklanEuicciOS.git", from: "1.1.8")
+    .package(url: "https://github.com/huangzhangliang/LinklanEuicciOS.git", from: "1.2.6")
 ]
 ```
 
