@@ -9838,6 +9838,20 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/apple\/Wrokspace\/iOS\/LinklanEuiccIOS\/LinklanEuicc\/Client\/LKEuiccClient.swift",
+      "kind": "Array",
+      "offset": 600,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/apple\/Wrokspace\/iOS\/LinklanEuiccIOS\/LinklanEuicc\/Client\/LKEuiccClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 641,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/apple\/Wrokspace\/iOS\/LinklanEuiccIOS\/LinklanEuicc\/Client\/TYEuiccClient.swift",
       "kind": "BooleanLiteral",
       "offset": 371,
@@ -10484,7 +10498,7 @@
     {
       "filePath": "\/Users\/apple\/Wrokspace\/iOS\/LinklanEuiccIOS\/LinklanEuicc\/LinklanLPA.swift",
       "kind": "IntegerLiteral",
-      "offset": 5668,
+      "offset": 6088,
       "length": 5,
       "value": "15000"
     }
