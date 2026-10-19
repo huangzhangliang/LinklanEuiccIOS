@@ -9839,17 +9839,17 @@
     },
     {
       "filePath": "\/Users\/apple\/Wrokspace\/iOS\/LinklanEuiccIOS\/LinklanEuicc\/Client\/LKEuiccClient.swift",
-      "kind": "Array",
-      "offset": 600,
-      "length": 2,
+      "kind": "Dictionary",
+      "offset": 614,
+      "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/apple\/Wrokspace\/iOS\/LinklanEuiccIOS\/LinklanEuicc\/Client\/LKEuiccClient.swift",
-      "kind": "IntegerLiteral",
-      "offset": 641,
-      "length": 1,
-      "value": "0"
+      "kind": "Dictionary",
+      "offset": 674,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/apple\/Wrokspace\/iOS\/LinklanEuiccIOS\/LinklanEuicc\/Client\/TYEuiccClient.swift",
