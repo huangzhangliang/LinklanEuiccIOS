@@ -118,6 +118,67 @@
           },
           {
             "kind": "Var",
+            "name": "advName",
+            "printedName": "advName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12LinklanEuicc9BleDeviceV7advNameSSSgvp",
+            "mangledName": "$s12LinklanEuicc9BleDeviceV7advNameSSSgvp",
+            "moduleName": "LinklanEuicc",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LinklanEuicc9BleDeviceV7advNameSSSgvg",
+                "mangledName": "$s12LinklanEuicc9BleDeviceV7advNameSSSgvg",
+                "moduleName": "LinklanEuicc",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "rssi",
             "printedName": "rssi",
             "children": [
@@ -5649,6 +5710,117 @@
           },
           {
             "kind": "Var",
+            "name": "advName",
+            "printedName": "advName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12LinklanEuicc0B6DeviceV7advNameSSSgvp",
+            "mangledName": "$s12LinklanEuicc0B6DeviceV7advNameSSSgvp",
+            "moduleName": "LinklanEuicc",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LinklanEuicc0B6DeviceV7advNameSSSgvg",
+                "mangledName": "$s12LinklanEuicc0B6DeviceV7advNameSSSgvg",
+                "moduleName": "LinklanEuicc",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LinklanEuicc0B6DeviceV7advNameSSSgvs",
+                "mangledName": "$s12LinklanEuicc0B6DeviceV7advNameSSSgvs",
+                "moduleName": "LinklanEuicc",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LinklanEuicc0B6DeviceV7advNameSSSgvM",
+                "mangledName": "$s12LinklanEuicc0B6DeviceV7advNameSSSgvM",
+                "moduleName": "LinklanEuicc",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "model",
             "printedName": "model",
             "children": [
@@ -9770,21 +9942,21 @@
     {
       "filePath": "\/Users\/apple\/Wrokspace\/iOS\/LinklanEuiccIOS\/LinklanEuicc\/Ble\/BleDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 747,
+      "offset": 827,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/apple\/Wrokspace\/iOS\/LinklanEuiccIOS\/LinklanEuicc\/Ble\/BleDevice.swift",
       "kind": "StringLiteral",
-      "offset": 775,
+      "offset": 855,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Wrokspace\/iOS\/LinklanEuiccIOS\/LinklanEuicc\/Ble\/BleDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 878,
+      "offset": 958,
       "length": 1,
       "value": "0"
     },
@@ -10498,7 +10670,7 @@
     {
       "filePath": "\/Users\/apple\/Wrokspace\/iOS\/LinklanEuiccIOS\/LinklanEuicc\/LinklanLPA.swift",
       "kind": "IntegerLiteral",
-      "offset": 5663,
+      "offset": 5893,
       "length": 5,
       "value": "15000"
     }

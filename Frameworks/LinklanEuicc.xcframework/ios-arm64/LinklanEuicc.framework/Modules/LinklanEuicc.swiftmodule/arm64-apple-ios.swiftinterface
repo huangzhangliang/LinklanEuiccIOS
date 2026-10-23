@@ -13,6 +13,7 @@ import eSIMManagerSDK
 public struct BleDevice {
   public let address: Swift.String
   public let name: Swift.String
+  public let advName: Swift.String?
   public let rssi: Swift.Int?
   public let model: Swift.String
   public let scanRecord: Foundation.Data?
@@ -143,6 +144,7 @@ public struct EuiccDevice {
   public var imei: Swift.String?
   public var sn: Swift.String?
   public var name: Swift.String?
+  public var advName: Swift.String?
   public var model: Swift.String?
   public var deviceName: Swift.String?
   public var address: Swift.String?
