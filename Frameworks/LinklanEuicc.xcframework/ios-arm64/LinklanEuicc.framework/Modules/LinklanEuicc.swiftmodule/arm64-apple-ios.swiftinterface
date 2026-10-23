@@ -241,5 +241,8 @@ extension LinklanEuicc.ProfileInfo : Swift.Hashable {
   #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
   nonisolated(nonsending) public func setApdu(device: LinklanEuicc.EuiccDevice?, checkPatch: Swift.String?) async -> LinklanEuicc.EuiccResult<Swift.String>
   #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func setProfileNickname(device: LinklanEuicc.EuiccDevice?, iccid: Swift.String?, nickname: Swift.String?) async -> LinklanEuicc.EuiccResult<Swift.String>
+  #endif
   @objc deinit
 }

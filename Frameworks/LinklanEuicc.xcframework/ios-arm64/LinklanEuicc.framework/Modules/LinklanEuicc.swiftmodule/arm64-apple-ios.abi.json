@@ -9852,6 +9852,78 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setProfileNickname",
+            "printedName": "setProfileNickname(device:iccid:nickname:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EuiccResult",
+                "printedName": "LinklanEuicc.EuiccResult<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:12LinklanEuicc0B6ResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LinklanEuicc.EuiccDevice?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EuiccDevice",
+                    "printedName": "LinklanEuicc.EuiccDevice",
+                    "usr": "s:12LinklanEuicc0B6DeviceV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LinklanEuicc0A3LPAC18setProfileNickname6device5iccid8nicknameAA0B6ResultVySSGAA0B6DeviceVSg_SSSgANtYaF",
+            "mangledName": "$s12LinklanEuicc0A3LPAC18setProfileNickname6device5iccid8nicknameAA0B6ResultVySSGAA0B6DeviceVSg_SSSgANtYaF",
+            "moduleName": "LinklanEuicc",
+            "declAttributes": [
+              "Nonisolated",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
